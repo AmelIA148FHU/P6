@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            border: solid 0.1em var(--color-secundary) ;
+        }
+        :root{
+            --color-primary: #6CBFEE;
+            --color-secundary:#355D74;
+            --color-bg:#B7D4E4;
+            --color-black:#093045;
+        }
+        .card_text{
+            font-family: 'Raleway', sans-serif;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 26%;
+            flex-direction: column;
+            border: solid 0.2em var(--color-secundary) ;
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:nth-child(2), .card:nth-child(3){
+            flex: 1 3 60%;
+        }
+        .card:first-child img{
+            object-position: top;
+        }
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_text{
+            display: flex;
+            flex-direction: column;
+            padding: 2em 0 0 0;
+            justify-content: baseline;
+            height: 100%;
+        }
+        .card_text h1{
+            font-size: 1.8em;
+            color: var(--color-secundary);
+            padding: 0 0 0.1em 0;
+        }
+        .card_text h2{
+            justify-content: flex-start;
+            font-size: 1.2em;
+            color: var(--color-black);
+            font-weight: 700;
+            letter-spacing: 0.10em;
+            padding: 0 0 0.6em 0;
+            font-variant: small-caps;
+        }
+        .card_text p{
+            padding: 1em 0 0 0;
+            font-weight: 100;
+            font-size: 1,25em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/1_Irises.jpg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Irises</h1>
+                    <h2>vicent van gogh</h2>
+                    <p>En mayo de 1890, justo antes de salir del manicomio de Saint-Rémy, Van Gogh pintó cuatro exuberantes ramos de flores primaverales, las únicas naturalezas muertas de cualquier ambición que había emprendido durante su estancia de un año: dos de lirios, dos de rosas , en esquemas de color y formatos contrastantes. En los Iris del Museo buscó un efecto “armonioso y suave” colocando las flores “violetas” sobre un “fondo rosa”, que desde entonces se han desvanecido debido al uso de pigmentos rojos fugitivos. Otro trabajo de esta serie, Roses (1993.400.5), cuelga en la galería adyacente. Ambos fueron propiedad de la madre del artista hasta su muerte en 1907.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/2_El puente de Villeneuve-la-Garenne.jpg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>El puente de Villeneuve-la-Garenne</h1>
+                    <h2>alfred sisley</h2>
+                    <p>Puentes de última generación, recientemente construidos, emblemáticos de la modernidad, aparecen en varias pinturas de Sisley de la década de 1870 y principios de la de 1880. Esta vista de primer plano en ángulo dramático muestra el puente colgante de piedra y hierro fundido que se construyó en 1844 para conectar el pueblo de Villeneuve-la-Garenne con el suburbio parisino de Saint-Denis. Sisley animó la escena mostrando a los turistas en el Sena ya lo largo de la orilla del río. Los trazos planos de color de clave alta transmiten el efecto fugaz de la luz del sol en el agua.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/3_Dos hombres contemplando la luna.jpg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Dos hombres contemplando la luna</h1>
+                    <h2>caspar david friedrich</h2>
+                    <p>Estas dos figuras se ven de espaldas para que el espectador participe de su comunión con la naturaleza. Han sido identificados como Friedrich, a la derecha, y su amigo y discípulo August Heinrich (1794–1822). La fascinación por la luna era alta entre los románticos alemanes, que consideraban el motivo como un objeto de piadosa contemplación. Esta es la tercera versión de una de las composiciones más famosas de Friedrich, de las cuales la primera fue pintada durante la vida de Heinrich (1819; Gemäldegalerie, Dresden) y la segunda poco después de su muerte (ca. 1824; Alte Nationalgalerie, Berlín).</p> 
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/4_Venecia, desde el Pórtico de Madonna della Salute.jpg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Venecia, desde el Pórtico de Madonna della Salute</h1>
+                    <h2>joseph mallord william turner</h2>
+                    <p>Puentes de última generación, recientemente construidos, emblemáticos de la modernidad, aparecen en varias pinturas de Sisley de la década de 1870 y principios de la de 1880. Esta vista de primer plano en ángulo dramático muestra el puente colgante de piedra y hierro fundido que se construyó en 1844 para conectar el pueblo de Villeneuve-la-Garenne con el suburbio parisino de Saint-Denis. Sisley animó la escena mostrando a los turistas en el Sena ya lo largo de la orilla del río. Los trazos planos de color de clave alta transmiten el efecto fugaz de la luz del sol en el agua.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/5_Vista de La Crescenza.jpg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>El puente de Villeneuve-la-Garenne</h1>
+                    <h2>alfred sisley</h2>
+                    <p>Puentes de última generación, recientemente construidos, emblemáticos de la modernidad, aparecen en varias pinturas de Sisley de la década de 1870 y principios de la de 1880. Esta vista de primer plano en ángulo dramático muestra el puente colgante de piedra y hierro fundido que se construyó en 1844 para conectar el pueblo de Villeneuve-la-Garenne con el suburbio parisino de Saint-Denis. Sisley animó la escena mostrando a los turistas en el Sena ya lo largo de la orilla del río. Los trazos planos de color de clave alta transmiten el efecto fugaz de la luz del sol en el agua.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                        <img src="img/6_Las troyanas prendiendo fuego a su flota.jpg" alt="">
+                </figure>
+                <header class="card_text">
+                    <h1>Las troyanas prendiendo fuego a su flota</h1>
+                    <h2>claude lorrain</h2>
+                    <p>Los cielos luminosos y los efectos atmosféricos de Claude Lorrain son hitos en la pintura europea. Al igual que su contemporáneo Poussin, Claude vio el paisaje a través de una lente clásica: representa a las mujeres de Troya incendiando sus barcos en un esfuerzo por poner fin a años de deambular después de que los griegos se apoderaran de su ciudad. Nubes lejanas y lluvias presagian la tormenta enviada por Júpiter a petición de Eneas para apagar las llamas. El tema debe haber atraído particularmente al hombre que lo encargó. El cardenal Girolamo Farnese fue un prelado que regresó a Roma en 1643, después de años de servicio itinerante como nuncio papal luchando contra el calvinismo en remotos cantones alpinos de la Confederación Suiza.</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
